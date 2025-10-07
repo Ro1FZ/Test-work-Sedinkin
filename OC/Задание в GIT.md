@@ -36,3 +36,7 @@
 ![[Pasted image 20251007225743.png]]
 Нашёл USB-контроллеры (lspci | grep -i usb,lsusb -t  # покажет дерево USB),
 потом определил модуль ядра (обычно xhci_hcd для USB 3.0, ehci_hcd для USB 2.0)
+(lspci -k -s 02:00.0) для 1
+(lspci -k -s 02:03.0) для 2
+Отключил (sudo modprobe -r uhci_hcd,sudo modprobe -r ehci-pci)
+1 естественно не отключился тк используется, но 2 отключился 
