@@ -6,27 +6,27 @@
 4) Отключить звуковую карту.
 5) Выключить контроллер usb.
 1)
-![[Pasted image 20251007221050.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007221050.png?raw=true>)
 Проверяю систему на обновление и скачиваю 3 утилиты для диагностики оборудования в системах:
 `pciutils``lspci`Показывает список PCI/PCIe-устройств: видеокарты, сетевые карты, контроллеры и т.д.
 `usbutils``lsusb`Показывает список USB-устройств, подключённых к системе.
 `dmidecode``dmidecode`Выводит подробную информацию о железе из DMI/SMBIOS: модель материнской платы, BIOS, объём RAM, серийные номера и т.д.
 /proc/cpuinfo содержит информацию о процессоре.
-![[Pasted image 20251007221527.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007221527.png?raw=true>)
 Оперативная память - информацию о модулях ОЗУ (производитель, тип, частота, слоты) можно получить с помощью `dmidecode`, так как `/proc/meminfo` отображает только общий объём доступной памяти, но не детали физических модулей.
 Альтернатива (если `dmidecode` недоступен):
-![[Pasted image 20251007221604.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007221604.png?raw=true>)
 Однако сведения о модулях памяти такие как производитель, тип и частота доступны только через интерфейс DMI/SMBIOS, то есть посредством утилиты `dmidecode`.
 2)
-![[Pasted image 20251007222133.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007222133.png?raw=true>)
 Используем `/sys` и `lsblk`: устройства отображаются в `/dev`, а их метаданные — в `/sys`.
 Или напрямую из /sys:(я сразу вписал 2 команды )
 Для NVMe: cat /sys/class/nvme/nvme0/model (скрина нет тк NVMe — это интерфейс для SSD-накопителей, подключаемых напрямую через PCIe, а обычно виртуалка по умолчанию эмулируют обычные SATA- или SCSI-диски.)
 3)
-![[Pasted image 20251007222718.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007222718.png?raw=true>)
 Используем `lspci` (согласно конспекту: `lspci` — утилита для получения информации об устройствах шины PCI, включая PCIe) lspci -tv (покажет древовидную структуру шины PCI/PCIe.)
 Для полного списка: lspci -v (Все устройства PCIe отображаются как PCI-устройства, а их скорость линка и поколение указываются в подробном выводе команды `lspci -vv`.)
-![[Pasted image 20251007223216.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007223216.png?raw=true>)
 Можно посмотреть напрямую в /sys: ls /sys/bus/pci/devices/ (покажет все PCI-устройства по их ID.)
 4)
 ![[Pasted image 20251007224310.png]]
