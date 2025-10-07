@@ -18,21 +18,25 @@
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007221604.png?raw=true>)
 Однако сведения о модулях памяти такие как производитель, тип и частота доступны только через интерфейс DMI/SMBIOS, то есть посредством утилиты `dmidecode`.
 2)
+
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007222133.png?raw=true>)
 Используем `/sys` и `lsblk`: устройства отображаются в `/dev`, а их метаданные — в `/sys`.
 Или напрямую из /sys:(я сразу вписал 2 команды )
 Для NVMe: cat /sys/class/nvme/nvme0/model (скрина нет тк NVMe — это интерфейс для SSD-накопителей, подключаемых напрямую через PCIe, а обычно виртуалка по умолчанию эмулируют обычные SATA- или SCSI-диски.)
 3)
+
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007222718.png?raw=true>)
 Используем `lspci` (согласно конспекту: `lspci` — утилита для получения информации об устройствах шины PCI, включая PCIe) lspci -tv (покажет древовидную структуру шины PCI/PCIe.)
 Для полного списка: lspci -v (Все устройства PCIe отображаются как PCI-устройства, а их скорость линка и поколение указываются в подробном выводе команды `lspci -vv`.)
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007223216.png?raw=true>)
 Можно посмотреть напрямую в /sys: ls /sys/bus/pci/devices/ (покажет все PCI-устройства по их ID.)
 4)
+
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007224310.png?raw=true>)
 Согласно конспекту, управление устройствами осуществляется через модули ядра (modprobe, rmmod) и `udev`.
 Нашёл звуковое устройство (lspci | grep -i audio), узнал, какой модуль ядра используется (lspci -k -s 02:02.0), отключил модуль ядра (sudo modprobe -r snd_ens1371), проверил (lsmod | grep snd_ens1371)
 5)
+
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007225743.png?raw=true>)
 Нашёл USB-контроллеры (lspci | grep -i usb,lsusb -t  # покажет дерево USB),
 потом определил модуль ядра (обычно xhci_hcd для USB 3.0, ehci_hcd для USB 2.0)
