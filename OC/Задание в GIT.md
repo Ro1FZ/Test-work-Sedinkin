@@ -29,11 +29,11 @@
 ![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007223216.png?raw=true>)
 Можно посмотреть напрямую в /sys: ls /sys/bus/pci/devices/ (покажет все PCI-устройства по их ID.)
 4)
-![[Pasted image 20251007224310.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007224310.png?raw=true>)
 Согласно конспекту, управление устройствами осуществляется через модули ядра (modprobe, rmmod) и `udev`.
 Нашёл звуковое устройство (lspci | grep -i audio), узнал, какой модуль ядра используется (lspci -k -s 02:02.0), отключил модуль ядра (sudo modprobe -r snd_ens1371), проверил (lsmod | grep snd_ens1371)
 5)
-![[Pasted image 20251007225743.png]]
+![Image](<https://github.com/Ro1FZ/Test-work-Sedinkin/blob/main/Pasted%20image%2020251007225743.png?raw=true>)
 Нашёл USB-контроллеры (lspci | grep -i usb,lsusb -t  # покажет дерево USB),
 потом определил модуль ядра (обычно xhci_hcd для USB 3.0, ehci_hcd для USB 2.0)
 (lspci -k -s 02:00.0) для 1
