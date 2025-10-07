@@ -29,6 +29,7 @@
 ![[Pasted image 20251007223216.png]]
 Можно посмотреть напрямую в /sys: ls /sys/bus/pci/devices/ (покажет все PCI-устройства по их ID.)
 4)
-![[Pasted image 20251007223715.png]]
+![[Pasted image 20251007224310.png]]
 Согласно конспекту, управление устройствами осуществляется через модули ядра (modprobe, rmmod) и `udev`.
-Нашёл звуковое устройство (lspci | grep -i audio), 
+Нашёл звуковое устройство (lspci | grep -i audio), узнал, какой модуль ядра используется (lspci -k -s 02:02.0), отключил модуль ядра (sudo modprobe -r snd_ens1371), проверил (lsmod | grep snd_ens1371)
+5)
