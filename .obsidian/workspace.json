@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OC/Задание в GIT.md",
+                "file": "OC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задание в GIT"
+              "title": "OC"
             }
           },
           {
@@ -211,13 +211,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a552cdd7f7fa3d8",
+  "active": "009eb6b586e087af",
   "lastOpenFiles": [
+    "OC/Без названия",
+    "OC/Задание в GIT.md",
     "OC.md",
     "Pasted image 20251007224310.png",
     "Pasted image 20251007223216.png",
     "Pasted image 20251007223715.png",
-    "OC/Задание в GIT.md",
     "OC/Практическая работа. Модуль 18. Управление устройствами и модулями ядра ОС.md",
     "Pasted image 20251007225743.png",
     "Pasted image 20251007222718.png",
