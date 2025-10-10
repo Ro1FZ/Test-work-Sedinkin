@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OC.md",
+                "file": "Виртуализация/Нихао.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OC"
+              "title": "Нихао"
             }
           },
           {
@@ -211,11 +211,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "009eb6b586e087af",
+  "active": "9a552cdd7f7fa3d8",
   "lastOpenFiles": [
+    "OC.md",
+    "Виртуализация/Нихао.md",
+    "Виртуализация",
     "OC/Без названия",
     "OC/Задание в GIT.md",
-    "OC.md",
     "Pasted image 20251007224310.png",
     "Pasted image 20251007223216.png",
     "Pasted image 20251007223715.png",
@@ -235,7 +237,6 @@
     "OC/Практическая работа. Модуль 5. Работа со справочными системами.md",
     "Pasted image 20251005144337.png",
     "OC/Практическая работа. Модуль 21. Работа с журналами и отладка системы.md",
-    "Без названия",
     "Без названия.md",
     "Без названия 1.md",
     "OC",
