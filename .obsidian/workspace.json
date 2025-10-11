@@ -39,14 +39,12 @@
             "id": "9a552cdd7f7fa3d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Виртуализация/Виртуализация.md",
-                "mode": "source",
-                "source": false
+                "file": "Виртуализация/Pasted image 20251011001443.png"
               },
-              "icon": "lucide-file",
-              "title": "Виртуализация"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251011001443"
             }
           },
           {
@@ -213,10 +211,10 @@
   },
   "active": "9a552cdd7f7fa3d8",
   "lastOpenFiles": [
-    "Виртуализация/Pasted image 20251011000807.png",
-    "Виртуализация/Pasted image 20251011001443.png",
     "Виртуализация/Pasted image 20251011213012.png",
     "Виртуализация/Виртуализация.md",
+    "Виртуализация/Pasted image 20251011000807.png",
+    "Виртуализация/Pasted image 20251011001443.png",
     "OC/Практическая работа. Модуль 5. Работа со справочными системами.md",
     "Виртуализация/Pasted image 20251011213324.png",
     "Виртуализация/Pasted image 20251011125403.png",
