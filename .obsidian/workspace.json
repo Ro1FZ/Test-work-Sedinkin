@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Сети/ЛР1.md",
+                "file": "Сети/ЛР2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ЛР1"
+              "title": "ЛР2"
             }
           },
           {
@@ -214,6 +214,7 @@
   "active": "9a552cdd7f7fa3d8",
   "lastOpenFiles": [
     "Сети/Pasted image 20251013202624.png",
+    "Сети/ЛР2.md",
     "Сети/ЛР1.md",
     "OC/Практическая работа. Модуль 5. Работа со справочными системами.md",
     "Pasted image 20251007225743.png",
