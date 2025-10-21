@@ -39,12 +39,14 @@
             "id": "9a552cdd7f7fa3d8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Сети/Pasted image 20251021210542.png"
+                "file": "Сети/ЛР5.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251021210542"
+              "icon": "lucide-file",
+              "title": "ЛР5"
             }
           },
           {
@@ -209,12 +211,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "009eb6b586e087af",
+  "active": "9a552cdd7f7fa3d8",
   "lastOpenFiles": [
-    "Pasted image 20251007225743.png",
-    "Сети/Pasted image 20251021210542.png",
-    "Сети/ЛР5.md",
     "Сети/ЛР4.md",
+    "Сети/Pasted image 20251021210542.png",
+    "Pasted image 20251007225743.png",
+    "Сети/ЛР5.md",
     "Сети/ЛР3.md",
     "Сети/ЛР6.md",
     "Сети/Pasted image 20251020224140.png",
