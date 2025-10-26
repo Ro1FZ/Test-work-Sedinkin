@@ -39,12 +39,14 @@
             "id": "9a552cdd7f7fa3d8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "CPK/Pasted image 20251025132031.png"
+                "file": "CPK/Работа.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251025132031"
+              "icon": "lucide-file",
+              "title": "Работа"
             }
           },
           {
@@ -209,20 +211,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "009eb6b586e087af",
+  "active": "9a552cdd7f7fa3d8",
   "lastOpenFiles": [
+    "Сети/ЛР1.md",
+    "CPK/Работа.md",
+    "CPK/Pasted image 20251025132031.png",
     "Pasted image 20251024164927.png",
     "CPK/Pasted image 20251025131949.png",
-    "CPK/Pasted image 20251025132031.png",
     "Pasted image 20251025202434.png",
     "Pasted image 20251025202840.png",
-    "CPK/Работа.md",
     "CPK/Pasted image 20251026145303.png",
     "CPK/Pasted image 20251026144404.png",
     "CPK/Pasted image 20251026143939.png",
     "CPK/Pasted image 20251026143838.png",
     "CPK/Pasted image 20251026143735.png",
-    "CPK/Pasted image 20251026142110.png",
     "Сети/ЛР6.md",
     "CPK",
     "Сети/~$$Структурная схема SedinkinSA11.~vsdx",
@@ -237,7 +239,6 @@
     "OC.md",
     "README.md",
     "Сети/ЛР2.md",
-    "Сети/ЛР1.md",
     "OC/Практическая работа. Модуль 5. Работа со справочными системами.md",
     "Сети/Тесты на сайте.md",
     "Сети",
