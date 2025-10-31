@@ -169,3 +169,4 @@ bad command name ping (line 1 column 1)
 [admin@RouterOS] /system logging>
 
 ```
+![[Pasted image 20251031213208.png]]
